@@ -2,22 +2,25 @@
 #define ll long long 
 using namespace  std; 
 
-
 void solve() 
 {
-   int n, b, mas[105];
-    cin >> n;
-    
-    for (int i = 1; i <= n; i++) 
-    {
-        cin >> b;
-        mas[b] = i;
-    }
+   int a[6][6]; 
+   int i,j,r,s ; 
 
-    for (int i = 1; i <= n; i++) 
-    {
-        cout << mas[i] << " ";
-    }
+   for(i = 1; i < 6; i++) 
+   {
+        for(j = 1; j < 6; j++) 
+        {
+            cin >> a[i][j] ; 
+
+            if(a[i][j] == 1) 
+            {
+                r = abs(3-i); 
+                s = abs(3-j); 
+                cout << r + s ; 
+            }
+        }
+   }
 }
 
 int32_t main() 
