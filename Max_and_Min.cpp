@@ -4,8 +4,8 @@ using namespace  std;
 
 void solve() 
 {
-    string a,b,c,d ; cin >> a >> b >> c >> d;  
-    
+    string a,b,c,d ; cin >> a >> b >> c >> d;   
+
     if(b == d) 
     {
         cout << "ARE Brothers" ;
